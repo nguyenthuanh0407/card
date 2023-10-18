@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+#text-container{
+  position: relative;
+  font-size: 60px;
+  margin-top: 25px;
+  font-family: 'Caveat', cursive;
+  color: rgb(42, 0, 61);
+  animation: changeTextColor 10s linear infinite;
+}
+
+#happy{
+  margin-left: 10px;
+}
+
+#birthday{
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.circle{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.411);
+  z-index: -1;
+  left: 20px;
+  box-shadow: 120px 70px rgba(255, 255, 255, 0.411), 20px 80px rgba(255, 255, 255, 0.411), 160px 260px rgba(255, 255, 255, 0.411), 170px -10px rgba(255, 255, 255, 0.411), 130px 180px rgba(255, 255, 255, 0.411), -10px 170px rgba(255, 255, 255, 0.411), 0px 220px rgba(255, 255, 255, 0.411), 100px 120px rgba(255, 255, 255, 0.411), 60px 150px rgba(255, 255, 255, 0.411), 0px 100px rgba(255, 255, 255, 0.411), 90px -5px rgba(255, 255, 255, 0.411), 90px 50px rgba(255, 255, 255, 0.411), -20px 260px rgba(255, 255, 255, 0.411), 50px 260px rgba(255, 255, 255, 0.411), 120px 240px rgba(255, 255, 255, 0.411), 165px 130px rgba(255, 255, 255, 0.411), 155px 200px rgba(255, 255, 255, 0.411), 165px 65px rgba(255, 255, 255, 0.411);
+}
+
+#heart { 
+  position: relative; 
+  margin: auto;
+  margin-top: 40px;
+  width: 120px; 
+  height: 108px; 
+} 
+
+#heart:before, #heart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 60px; 
+  top: 0; 
+  width: 60px; 
+  height: 96px; 
+  border-radius: 60px 60px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%; 
+  animation: changeColor 10s linear infinite;
+} 
+
+#heart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%; 
+}
+
+@keyframes changeColor{
+  100%,0% {background-color: rgb(42, 0, 61);}
+  16% {background-color: rgb(70, 0, 102); }
+  33% {background-color: rgb(92, 0, 134); }
+  50% {background-color: rgb(112, 1, 163); }
+  66% {background-color: rgb(142, 0, 207); }
+  83% {background-color: rgb(174, 0, 255);}
+}
+
+@keyframes changeTextColor{
+  100%,0% {color: rgb(42, 0, 61);}
+  16% {color: rgb(70, 0, 102); }
+  33% {color: rgb(92, 0, 134); }
+  50% {color: rgb(112, 1, 163); }
+  66% {color: rgb(142, 0, 207); }
+  83% {color: rgb(174, 0, 255);}
+}

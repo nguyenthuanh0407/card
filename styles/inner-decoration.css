@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Prompt:ital@1&display=swap');
+
+#paper{
+  width: 225px;
+  height: 300px;
+  background-color: white;
+}
+
+#instruction{
+  margin-top: 35px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  color: rgb(42, 0, 61);
+  font-size: 20px;
+}
+
+#cake{
+  position: relative;
+  width: 180px;
+  height: 80px;
+  background-color: #e4ba76;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px 20px 0 0;
+}
+
+#plate{
+  position: absolute;
+  width: 200px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: rgb(143, 143, 143);
+  left: -10px;
+  bottom: -15px;
+  
+}
+
+#plate:hover{
+  opacity: 0.8;
+}
+
+#plate:active{
+  opacity: 0.6;
+}
+
+#chocolate{
+  position: relative;
+  background-color: #331800;
+  border-radius: 20px 20px 0 0;
+  width: 180px;
+  height: 35px;
+}
+
+#chocolate::before{
+  position: absolute;
+  content: "";
+  background-color: #331800;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  top: 5px;
+  box-shadow: 35px 20px #331800, 75px 10px #331800, 82px 10px #331800, 130px 2px #331800;
+}
+
+#candle{
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background-color: rgb(255, 34, 34);
+  top:-35px;
+  left: 80px;
+  z-index: 1;
+  border-radius: 5px 5px 0 0;
+}
+
+#candle::before{
+  position: absolute;
+  top: 12px;
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: white;
+  box-shadow: 0 20px white;
+}
+
+#candle::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 9px;
+  background-color: rgb(37, 37, 37);
+  top: -8px;
+  left: 8px;
+}
+
+#flame{
+  position: absolute;
+  background-color: #ffcc00;
+  opacity: 0.9;
+  box-shadow: inset 0 -5px 5px #D35400, 5px -5px 20px #ecf802;
+  width: 15px;
+  height: 20px;
+  top: -58px;
+  border-radius: 50%;
+  left: 81px;
+  animation: flame 0.5s infinite;
+  z-index: 2;
+
+  transition: .7s;
+}
+
+@keyframes flame{
+  0%, 100% {transform: scale(1, 1);}
+  25% {transform: scale(0.9, 1.1);}
+  50% {transform: scale(1.1, 0.9);}
+  75% {transform: scale(0.95, 1.05);}
+}
+
+#candle-container{
+  position: absolute;
+  z-index: 5;
+  width: 46px;
+  height: 90px;
+  top: -68px;
+  left: 66px;
+}
