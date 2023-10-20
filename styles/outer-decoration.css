@@ -6,7 +6,7 @@
   margin-top: 25px;
   font-family: 'Caveat', cursive;
   color: rgb(42, 0, 61);
-  animation: changeTextColor 10s linear infinite;
+  animation: changeTextColor 7s linear infinite;
 }
 
 #happy{
@@ -47,7 +47,7 @@
   border-radius: 60px 60px 0 0; 
   transform: rotate(-45deg); 
   transform-origin: 0 100%; 
-  animation: changeColor 10s linear infinite;
+  animation: changeColor 7s linear infinite;
 } 
 
 #heart:after { 
